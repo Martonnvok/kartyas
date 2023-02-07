@@ -1,7 +1,8 @@
-jP=10
-gP=19
-jK=[1,2,3,4,5]
-jG=[1,2,3,4,]
+
+jP = 22
+gP = 22
+jK = [1, 2, 3, 4, 5]
+jG = [1, 2, 3, 4, ]
 
 def jatekos_nyer():
     if jP>gP and jP==21:
@@ -19,5 +20,14 @@ def gep_nyer():
     elif jP < gP and len(jK) > len(jG) and gP == 19:
         print("19 ponttal, de kevesebb lappal mint a Játékos")
 
+def dontetlen():
+    if jP == gP and jP == 21 and gP == 21:
+        print("Egyformán 21 pontjuk van")
+    elif jP == gP and jP < 21 and gP < 21:
+        print("kevesebb, mint 21, de egyforma a lapok mennyisége")
+    elif jP == gP and jP > 21 and gP > 21:
+        print("mindkettő meghaladta a 21, tehát minimum 22 pontjuk van")
+
 gep_nyer()
 jatekos_nyer()
+dontetlen()
