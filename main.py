@@ -134,7 +134,7 @@ def dontetlen_teszt():
     #gLiO=len(jG)
 def jatekos_nyer_teszt():
     #osszJ=eredmeny2(jK)
-    xosszG=eredmeny3(jG)
+    #osszG=eredmeny3(jG)
     jP = 21
     gP = 2
     jK = [1, 2, 3, 4, 5]
