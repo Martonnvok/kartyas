@@ -107,6 +107,7 @@ def jatekos_vesztett_dontetlen_teszt():
     else:
         print("A hetedik teszt megbukott")
 
+
 def dontetlen_teszt():
     jatekospontok = [10, 10]
     geppontok = [10, 10]
@@ -118,6 +119,51 @@ def dontetlen_teszt():
         print("A nyolcadik teszt megbukott")
 
 
+def jatekos_nyer_teszt():
+    jP = 22
+    gP = 22
+    jK = [1, 2, 3, 4, 5]
+    jG = [1, 2, 3, 4]
+    if jP > gP and jP == 21:
+        print("Játékos nyert 21 ponttal")
+    elif jP > gP and len(jK) > len(jG) and jP == 19:
+        print("19 ponttal, de több lappal mint a gép")
+    elif jP > gP and len(jK) < len(jG) and jP == 19:
+        print("19 ponttal, de kevesebb lappal mint a gép")
+    else:
+        print("Játékos nyer teszt: Sikeres!")
+
+
+def gep_nyer_teszt():
+    jP = 22
+    gP = 22
+    jK = [1, 2, 3, 4, 5]
+    jG = [1, 2, 3, 4]
+    if jP < gP and gP == 21:
+            print("Gép nyert 21 ponttal")
+    elif jP < gP and len(jK) < len(jG) and gP == 19:
+            print("19 ponttal, de több lappal mint a Játékos")
+    elif jP < gP and len(jK) > len(jG) and gP == 19:
+        print("19 ponttal, de kevesebb lappal mint a Játékos")
+    else:
+        print("Gép nyer teszt: Sikeres!")
+
+
+def dontetlen_teszt():
+    jP = 22
+    gP = 22
+    jK = [1, 2, 3, 4, 5]
+    jG = [1, 2, 3, 4]
+    if jP == gP and jP == 21 and gP == 21:
+        print("Egyformán 21 pontjuk van")
+    elif jP == gP and jP < 21 and gP < 21:
+        print("kevesebb, mint 21, de egyforma a lapok mennyisége")
+    elif jP == gP and jP > 21 and gP > 21:
+        print("mindkettő meghaladta a 21, tehát minimum 22 pontjuk van")
+    else:
+        print("Döntetlen teszt: Sikeres!")
+
+
 def tesztek():
     jatekos_vesztett_teszt()
     gep_vesztett_teszt()
@@ -127,47 +173,14 @@ def tesztek():
     gep_vesztett_dontetlen_teszt()
     jatekos_vesztett_dontetlen_teszt()
     dontetlen_teszt()
+    jatekos_nyer_teszt()
+    gep_nyer_teszt()
 
 
 tesztek()
 
-def eredmeny():
-    jP = 22
-    gP = 22
-    jK = [1, 2, 3, 4, 5]
-    jG = [1, 2, 3, 4]
-    def jatekos_nyer():
-        if jP > gP and jP == 21:
-            print("Játékos nyert 21 ponttal")
-        elif jP > gP and len(jK) > len(jG) and jP == 19:
-            print("19 ponttal, de több lappal mint a gép")
-        elif jP > gP and len(jK) < len(jG) and jP == 19:
-            print("19 ponttal, de kevesebb lappal mint a gép")
-        else:
-            print("Játékos nyer: semmi")
 
-    def gep_nyer():
-        if jP < gP and gP == 21:
-            print("Gép nyert 21 ponttal")
-        elif jP < gP and len(jK) < len(jG) and gP == 19:
-            print("19 ponttal, de több lappal mint a Játékos")
-        elif jP < gP and len(jK) > len(jG) and gP == 19:
-            print("19 ponttal, de kevesebb lappal mint a Játékos")
-        else:
-            print("Gép nyer: semmi")
 
-    def dontetlen():
-        if jP == gP and jP == 21 and gP == 21:
-            print("Egyformán 21 pontjuk van")
-        elif jP == gP and jP < 21 and gP < 21:
-            print("kevesebb, mint 21, de egyforma a lapok mennyisége")
-        elif jP == gP and jP > 21 and gP > 21:
-            print("mindkettő meghaladta a 21, tehát minimum 22 pontjuk van")
-        else:
-            print("Döntetlen: semmi")
 
-    jatekos_nyer()
-    gep_nyer()
-    dontetlen()
-eredmeny()
+
 
