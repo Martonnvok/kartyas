@@ -120,8 +120,8 @@ def dontetlen_teszt():
 
 
 def jatekos_nyer_teszt():
-    jP = 22
-    gP = 22
+    jP = 19
+    gP = 2
     jK = [1, 2, 3, 4, 5]
     jG = [1, 2, 3, 4]
     if jP > gP and jP == 21:
@@ -135,8 +135,8 @@ def jatekos_nyer_teszt():
 
 
 def gep_nyer_teszt():
-    jP = 22
-    gP = 22
+    jP = 2
+    gP = 19
     jK = [1, 2, 3, 4, 5]
     jG = [1, 2, 3, 4]
     if jP < gP and gP == 21:
