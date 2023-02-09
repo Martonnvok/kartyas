@@ -118,19 +118,30 @@ def dontetlen_teszt():
     else:
         print("A nyolcadik teszt megbukott")
 
-#def eredmeny2(jK: [int], jG: [int]):
+#def eredmeny2(jK: [int]):
     #jP:int=szamolas(jK)
     #gP:int=szamolas(jG)
     #jLo=len(jK)
     #gLo=len(jG)
+    #jatekospont: int=szamolas(jK)
+    #jLiO=len(jK)
+#def eredmeny3(jG: [int]):
+    #jP:int=szamolas(jK)
+    #gP:int=szamolas(jG)
+    #jLo=len(jK)
+    #gLo=len(jG)
+    #jatekospont: int=szamolas(jG)
+    #gLiO=len(jG)
 def jatekos_nyer_teszt():
+    #osszJ=eredmeny2(jK)
+    xosszG=eredmeny3(jG)
     jP = 21
     gP = 2
     jK = [1, 2, 3, 4, 5]
     jG = [1, 2, 3, 4]
-    #osszJ=eredmeny2(jP, gP=0)
-    #osszG=eredmeny2(gP, jP=0)
-    if jP > gP  and jP == 21:
+    # osszJ=eredmeny2(jP, gP=0)
+    # osszG=eredmeny2(gP, jP=0)
+    if jP > gP and jP == 21:
         print("Játékos nyert 21 ponttal")
     elif jP > gP and len(jK) > len(jG) and jK == 19:
         print("19 ponttal, de több lappal mint a gép")
